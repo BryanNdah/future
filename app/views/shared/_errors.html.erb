@@ -1,0 +1,13 @@
+<% if object.errors.any? %>
+	<div class="row center sign-up-form">
+		<div class="col s12 m12 l12">
+			<div class="card-panel red lighten-2">
+				<ul>
+					<% object.errors.full_messages.each do |message| %>
+						<li><%= message %></li>
+					<% end %>
+				</ul>
+			</div>
+		</div>
+	</div>
+<% end %>

@@ -1,0 +1,42 @@
+<header>
+  <nav>
+		<ul id="dropdown1" class="dropdown-content">
+		  <li><a href="#!">Clothing</a></li>
+		  <li><a href="#!">Glasses</a></li>
+		  <li class="divider"></li>
+		  <li><a href="#!">Beauty</a></li>
+		</ul>
+		<ul id="dropdown2" class="dropdown-content">
+		  <li><a href="#!">Clothing</a></li>
+		  <li><a href="#!">Glasses</a></li>
+		  <li class="divider"></li>
+		  <li><a href="#!">Beauty</a></li>
+		</ul>
+  		<div class="container">
+		    <div class="nav-wrapper">
+		      <a href="#" class="brand-logo">FUTURE</a>
+		      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li><a href="#">Sign In</a></li>
+		        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Departments<i class="material-icons right">arrow_drop_down</i></a></li>
+		      </ul>
+		      <ul class="sidenav" id="mobile-demo">
+			    <li><a href="sass.html">Sign In</a></li>
+			    <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Departments<i class="material-icons
+			    right">arrow_drop_down</i></a></li> 
+			  </ul>
+		    </div>
+	    </div>
+  </nav>
+  <% flash.each do |key,message| %>
+	  <div class="container">
+		<div class="row center sign-up-form">
+			<div class="col s12 m12 l12">
+				<div class="card-panel" id="fade-out-target">
+					<%= message %>
+				</div>
+			</div>
+		</div>
+	  </div>
+<% end %>
+</header>
